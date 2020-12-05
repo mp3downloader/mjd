@@ -132,7 +132,7 @@
             this.$Message.info('抢购失败，还未到时间')
           }
         } catch (e) {
-          window.alert(e.message)
+          this.$Message.info(e.message)
         } finally {
           if (this.timers.length === 0) {
             this.$Notice.close('task_start_notice')
